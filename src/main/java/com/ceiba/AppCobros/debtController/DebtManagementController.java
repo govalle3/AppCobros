@@ -16,8 +16,6 @@ public class DebtManagementController {
             new Debt(3, "German Ovalle")
     );
 
-    //
-
     @GetMapping
     @PreAuthorize("hasAnyRole('ROLE_ADMIN', 'ROLE_ADMINTRAINEE')")
     public List<Debt> getAllDebts() {
