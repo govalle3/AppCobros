@@ -8,7 +8,8 @@ import static com.ceiba.AppCobros.security.ApplicationUserPermission.*;
 
 public enum ApplicationUserRole {
     DEBTOR(Sets.newHashSet()),
-    ADMIN(Sets.newHashSet(COURSE_READ, COURSE_WRITE, DEBTOR_READ, DEBTOR_WRITE));
+    ADMIN(Sets.newHashSet(COURSE_READ, COURSE_WRITE, DEBTOR_READ, DEBTOR_WRITE)),
+    ADMINTRAINEE(Sets.newHashSet(COURSE_READ, DEBTOR_READ));
 
     private final Set<ApplicationUserPermission> permissions;
 

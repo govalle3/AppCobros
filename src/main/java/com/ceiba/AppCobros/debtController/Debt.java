@@ -17,4 +17,12 @@ public class Debt {
     public Integer getDebtId() {
         return debtId;
     }
+
+    @Override
+    public String toString() {
+        return "Debt{" +
+                "debtId=" + debtId +
+                ", clientName='" + clientName + '\'' +
+                '}';
+    }
 }
